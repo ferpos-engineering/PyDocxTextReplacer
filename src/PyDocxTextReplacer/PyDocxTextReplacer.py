@@ -187,7 +187,7 @@ db = readDatabase(databaseName)
 unzipFile(inputDocx, unzipTempFolder)
 
 # I substitute the text with the database values.
-sample = analyzeText("./" + unzipTempFolder + "/word/document.xml", db)               
+analyzeText("./" + unzipTempFolder + "/word/document.xml", db)               
 
 # I zip the content of the temporary folder in a new ".docx" file.
 zipFolder(unzipTempFolder, outputDocx)
